@@ -17,9 +17,11 @@
 
 # path: script/py/src/mat.py
 
-from json_mocking import *  # Import functions from script/json_mocking.py
-from base_access import *  # Import functions from script/base_access.py
+from json_mocking import *  # Import JSON Dumping & Interpreting functionnalities 
+from base_access import *   # Import the base functions of the framework
+from perf_mes import *      # Import the performance measurement for optimizations
 
+@perf_mes
 def main():
     get_collection()
     get_mocks()
