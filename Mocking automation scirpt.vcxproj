@@ -131,6 +131,27 @@
   <ItemGroup>
     <ClCompile Include="src\mat.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\base_access.hpp" />
+    <ClInclude Include="include\constinf.hpp" />
+    <ClInclude Include="include\json_interpreter.hpp" />
+    <ClInclude Include="include\json_mocking.hpp" />
+    <ClInclude Include="include\json_parser.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="README.md" />
+    <None Include="script\base_access.py" />
+    <None Include="script\constinf.py" />
+    <None Include="script\json_interpreter.py" />
+    <None Include="script\json_mocking.py" />
+    <None Include="script\json_parser.py" />
+    <None Include="script\mat.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
