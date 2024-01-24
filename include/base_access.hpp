@@ -1,7 +1,8 @@
 #pragma once    //     BASE_ACCESS_HPP
+#pragma warning(disable : 4996)
 
 #include "constinf.hpp"
-
+#include <string>
 #include <glaze/json.hpp>
 #include <curl/curl.h>
 #include <iostream>
@@ -64,4 +65,37 @@ void get_mock() {
     }
     curl_easy_cleanup(curl);
 }
+
+std::string get_call(
+    std::string url     /* For exemple : https://api.getpostman.com/mocks */,
+    std::string header /* For header API key integration into endpoint */,
+    std::string api_key /* TODO: Add a decrypt function to permit sending messages while not revealing the API key */
+) {
+    CURL* curl;
+    CURLcode res;
+    std::string ret_output;
+
+    curl = curl_easy_init();
+    if (curl) {
+        curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "GET");
+        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+        curl_easy_setopt(curl, CURLOPT_DEFAULT_PROTOCOL, "https");
+        struct curl_slist* headers = NULL;
+        headers = curl_slist_append(headers, header.c_str());
+        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
+        std::string output;
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, &output);
+        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+        res = curl_easy_perform(curl);
+        ret_output = glz::prettify(output);
+    }
+    curl_easy_cleanup(curl);
+
+    std::cout << curl_easy_strerror(res) << "\n";
+
+    return ret_output;
+}
+
 // !BASE_ACCESS_HPP
