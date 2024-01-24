@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
@@ -18,18 +18,12 @@
     <ClCompile Include="src\mat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\perf_mes.cpp">
+    <ClCompile Include="include\perf_measure.hpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\json_parser.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\json_mocking.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\json_interpreter.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\base_access.hpp">
@@ -38,19 +32,20 @@
     <ClInclude Include="include\constinf.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\json_interpreter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_mocking.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="script\mat.py" />
     <None Include="script\base_access.py" />
     <None Include="script\constinf.py" />
     <None Include="script\json_interpreter.py" />
     <None Include="script\json_mocking.py" />
     <None Include="script\json_parser.py" />
-    <None Include="README.md" />
-    <None Include=".gitattributes" />
-    <None Include=".gitignore" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="LICENSE.txt" />
+    <None Include="script\mat.py" />
+    <None Include="script\perf_mes.py" />
   </ItemGroup>
 </Project>

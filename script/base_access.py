@@ -14,7 +14,6 @@
 # |---------------------------------------|-----------------------------------------|
 
 import requests
-
 from json_parser import *  # Import functions from script/json_parser.py
 from constinf import *  # Import constants from script/constinf.py
 
