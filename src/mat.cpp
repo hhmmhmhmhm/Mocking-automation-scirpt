@@ -1,6 +1,7 @@
 #include <iostream>
-#include <glaze/json.hpp>
+
 #include "../include/perf_measure.hpp"
+#include "../include/base_access.hpp"
 
 /****************************************************************************************
 * 
@@ -15,10 +16,13 @@
 *	Else make a ticket on GitHub.
 ****************************************************************************************/
 
-//int foo() {return 42;}
+int foo() {
+	get_collection(); get_mock();
+
+	return 42;
+}
 
 int main(void) {
-	//std::cout << wrapper<decltype(&foo), foo>() << "\n";
-
+	std::cout << wrapper<decltype(&foo), foo>() << "\n";
 	return 0;
 }
