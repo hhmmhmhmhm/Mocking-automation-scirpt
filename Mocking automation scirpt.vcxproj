@@ -129,8 +129,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\perf_mes.cpp" />
+    <ClCompile Include="include\perf_measure.hpp" />
     <ClCompile Include="src\mat.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\base_access.hpp" />
+    <ClInclude Include="include\constinf.hpp" />
+    <ClInclude Include="include\json_interpreter.hpp" />
+    <ClInclude Include="include\json_mocking.hpp" />
+    <ClInclude Include="include\json_parser.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="script\base_access.py" />
+    <None Include="script\constinf.py" />
+    <None Include="script\json_interpreter.py" />
+    <None Include="script\json_mocking.py" />
+    <None Include="script\json_parser.py" />
+    <None Include="script\mat.py" />
+    <None Include="script\perf_mes.py" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
