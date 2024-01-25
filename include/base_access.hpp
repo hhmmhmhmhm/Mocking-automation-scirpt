@@ -93,7 +93,7 @@ std::string get_call(
     }
     curl_easy_cleanup(curl);
 
-    std::cout << curl_easy_strerror(res) << "\n";
+    //std::cout << curl_easy_strerror(res) << "\n";
 
     return ret_output;
 }
