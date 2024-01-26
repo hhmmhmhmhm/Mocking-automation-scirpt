@@ -21,21 +21,15 @@
     <ClCompile Include="include\perf_measure.hpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\base_access.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\json_parser.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\base_access.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\constinf.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\json_interpreter.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\json_mocking.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,5 +41,37 @@
     <None Include="script\json_parser.py" />
     <None Include="script\mat.py" />
     <None Include="script\perf_mes.py" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="README.md" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\CL.command.1.tlog" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\Cl.items.tlog" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\CL.read.1.tlog" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\CL.write.1.tlog" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\link.command.1.tlog" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\link.read.1.tlog" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\link.write.1.tlog" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\Mocking automation scirpt.lastbuildstate" />
+    <None Include="x64\Debug\Mocking .564ed16c.tlog\Mocking automation script.lastbuildstate" />
+    <None Include="x64\Debug\Mocking automation scirpt.exe.recipe" />
+    <None Include="x64\Debug\Mocking automation scirpt.ilk" />
+    <None Include="x64\Debug\Mocking automation scirpt.pdb" />
+    <None Include="x64\Debug\Mocking automation script.exe" />
+    <None Include="x64\Debug\Mocking automation script.exe.recipe" />
+    <None Include="x64\Debug\Mocking automation script.ilk" />
+    <None Include="x64\Debug\Mocking automation script.pdb" />
+    <None Include="x64\Debug\vc143.idb" />
+    <None Include="x64\Debug\vc143.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="x64\Debug\mat.obj" />
+    <Object Include="x64\Debug\perf_measure.obj" />
+    <Object Include="x64\Debug\perf_mes.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+    <Text Include="x64\Debug\Mocking automation scirpt.log" />
+    <Text Include="x64\Debug\Mocking automation scirpt.vcxproj.FileListAbsolute.txt" />
+    <Text Include="x64\Debug\vcpkg.applocal.log" />
   </ItemGroup>
 </Project>

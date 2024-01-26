@@ -1,7 +1,10 @@
 #include <iostream>
 
 #include "../include/perf_measure.hpp"
+#include "../include/constinf.hpp"
 #include "../include/base_access.hpp"
+
+using namespace base_access;
 
 /****************************************************************************************
 * 
@@ -16,16 +19,15 @@
 *	Else make a ticket on GitHub.
 ****************************************************************************************/
 
-int foo() {
+void foo() {
 	std::string api_key = o_927f7d68b793a6413613dcae7cf831eb;
 	std::string url = "https://api.getpostman.com/mocks" + API_URL_ADDERS + api_key;
 	std::string header = API_H_REQUESTS_KEY + o_927f7d68b793a6413613dcae7cf831eb;
-	std::cout << get_call(url, header, api_key) << "\n";
 
-	return 42;
+	std::cout << get_call(url, header, api_key) << "\n";
 }
 
 int main(void) {
-	std::cout << wrapper<decltype(&foo), foo>() << "\n";
+	wrapper<decltype(&foo), foo>();
 	return 0;
 }
