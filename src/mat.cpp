@@ -3,8 +3,10 @@
 #include "../include/perf_measure.hpp"
 #include "../include/constinf.hpp"
 #include "../include/base_access.hpp"
+#include "../include/assert_endpoint.hpp"
 
 using namespace base_access;
+using namespace assert_endpoint;
 
 /****************************************************************************************
 * 

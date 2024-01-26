@@ -16,15 +16,31 @@ namespace base_access {
         std::string* output    /* Output string */);
 
     // Function to get the collection of the Postman API
-    void curl_session(CURL* curl, std::string& url);
+    void curl_session(
+        CURL* curl, 
+        std::string& url);
     // Function to integrate the header into the endpoint
-    void header_integration(CURL* curl, std::string& header, struct curl_slist*& headers);
+    void header_integration(
+        CURL* curl, 
+        std::string& header, 
+        struct curl_slist*& headers);
     // Function to prettify the output
-    void output_integration(CURL* curl, std::string& output);
+    void output_integration(
+        CURL* curl, 
+        std::string& output);
     // Function to perform the session
-    void perform_session(CURL* curl, CURLcode& res, std::string& output, struct curl_slist*& headers);
+    void perform_session(
+        CURL* curl, 
+        CURLcode& res, 
+        std::string& output, 
+        struct curl_slist*& headers);
     // Function to initialize the session
-    CURLcode session_init(CURL* curl, CURLcode& res, std::string& url, std::string& output, std::string& header);
+    CURLcode session_init(
+        CURL* curl, 
+        CURLcode& res, 
+        std::string& url, 
+        std::string& output, 
+        std::string& header);
     // Function to get the collection of the Postman API
     std::string get_call(
         std::string& url        /* For exemple : https://api.getpostman.com/mocks */,

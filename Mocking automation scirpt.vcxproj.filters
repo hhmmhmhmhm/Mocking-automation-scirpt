@@ -21,7 +21,10 @@
     <ClCompile Include="include\perf_measure.hpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\base_access.cpp">
+    <ClCompile Include="src\base_access.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\assert_endpoint.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +33,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\constinf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assert_endpoint.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

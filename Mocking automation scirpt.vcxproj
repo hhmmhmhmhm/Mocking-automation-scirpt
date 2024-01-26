@@ -130,10 +130,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="include\perf_measure.hpp" />
-    <ClCompile Include="src\base_access.cpp" />
+    <ClCompile Include="src\assert_endpoint.cc" />
+    <ClCompile Include="src\base_access.cc" />
     <ClCompile Include="src\mat.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\assert_endpoint.hpp" />
     <ClInclude Include="include\base_access.hpp" />
     <ClInclude Include="include\constinf.hpp" />
   </ItemGroup>
