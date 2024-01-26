@@ -2,9 +2,10 @@
 
 #include <exception>
 #include <stdexcept>
-
 #include <cassert>
 #include <string>
+
+#include <glaze/json.hpp>
 
 namespace assert_endpoint
 {

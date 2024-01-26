@@ -16,7 +16,16 @@ namespace assert_endpoint {
 		}
 	}
 
-	static void assert_p_ed(std::string& var_name, std::string& var_value, const std::string& message) {
+	//function to find the var name and value in the json file
+	std::pair<std::string, std::string> fetch_data(const std::string& var_name) {
+		//TODO : find the var name and value in the json file
+		//return std::make_pair(var_name, var_value);
+		return std::make_pair("je suis", "le plus beau");
+	}
+
+	static void assert_p_ed(const std::string& var_name, std::string& var_value, const std::string& message) {
+		//TODO : find the var name and value in the json file
 		
+		//TODO : assert the value
 	}
 } // namespace assert_enpoint

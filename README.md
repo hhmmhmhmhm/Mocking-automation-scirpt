@@ -15,3 +15,10 @@ In addition to the Python library, the mocking automation program provides a C++
 ### Builds and linking 
 
 When compiling your C++ project, make sure to include the necessary header files and link against the mocking automation library. You can refer to the provided documentation for detailed instructions on building and linking
+
+### Header and library files
+
+.hpp : Header file for the mocking automation library
+.cc : Header implementation file for the mocking automation library
+
+.cpp : Source file for the mocking automation library
