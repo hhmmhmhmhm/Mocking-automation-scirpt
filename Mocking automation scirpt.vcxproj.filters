@@ -27,6 +27,12 @@
     <ClCompile Include="src\assert_endpoint.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\endpoint.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\endpoint_tdd_all.hh">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\base_access.hpp">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\assert_endpoint.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\assertion.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\endpoint.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

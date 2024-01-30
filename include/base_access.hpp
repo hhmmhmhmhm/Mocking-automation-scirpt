@@ -7,6 +7,8 @@
 #include <glaze/json.hpp>
 #include <curl/curl.h>
 
+#include "endpoint.hpp"
+
 namespace base_access {
     // Callback function to handle the received data
     size_t WriteCallback(
@@ -43,9 +45,7 @@ namespace base_access {
         std::string& header);
     // Function to get the collection of the Postman API
     std::string get_call(
-        std::string& url        /* For exemple : https://api.getpostman.com/mocks */,
-        std::string& header     /* For header API key integration into endpoint */,
-        std::string& api_key    /* Pass the PMAK APÏ key */
+        endpoint endpoint
     );
 }
 

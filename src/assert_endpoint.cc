@@ -11,9 +11,7 @@ namespace assert_endpoint {
 	*/
 
 	static void assert_ep(bool condition, const std::string& message) {
-		if (!condition) {
-			throw std::runtime_error(message);
-		}
+	
 	}
 
 	//function to find the var name and value in the json file

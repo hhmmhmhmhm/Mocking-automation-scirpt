@@ -55,9 +55,7 @@ namespace base_access {
 
     // Function to get the collection of the Postman API
     std::string get_call(
-        std::string& url        /* For exemple : https://api.getpostman.com/mocks */,
-        std::string& header     /* For header API key integration into endpoint */,
-        std::string& api_key    /* Pass the PMAK APÏ key */
+        endpoint endpoint      /* Endpoint to call */
     ) {
         CURL* curl;
         CURLcode res;
@@ -65,7 +63,7 @@ namespace base_access {
         curl = curl_easy_init();
 
         if (curl) { // Start the session
-            res = session_init(curl, res, url, output, header);
+            res = session_init(curl, res, endpoint.url, output, endpoint.header);
             if (res != CURLE_OK /* Execution : OK */) {
                 return "Error while performing the curl session.";
             }

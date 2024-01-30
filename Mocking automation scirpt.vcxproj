@@ -132,12 +132,16 @@
     <ClCompile Include="include\perf_measure.hpp" />
     <ClCompile Include="src\assert_endpoint.cc" />
     <ClCompile Include="src\base_access.cc" />
+    <ClCompile Include="src\endpoint.cc" />
+    <ClCompile Include="src\endpoint_tdd_all.hh" />
     <ClCompile Include="src\mat.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\assertion.hpp" />
     <ClInclude Include="include\assert_endpoint.hpp" />
     <ClInclude Include="include\base_access.hpp" />
     <ClInclude Include="include\constinf.hpp" />
+    <ClInclude Include="include\endpoint.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />

@@ -7,6 +7,9 @@
 
 #include <glaze/json.hpp>
 
+#include "assertion.hpp"
+#include "endpoint.hpp"
+
 namespace assert_endpoint
 {
 	// Here, all the way when you'll be seeing the 'message' parameter
@@ -14,8 +17,12 @@ namespace assert_endpoint
 	// to the endpoint. It will be used to check if the endpoint is working
 	// properly or not.
 
-	static void assert_ed(bool condition, const std::string& message);
-	static void assert_p_ed(std::string& var_name, std::string& var_value, const std::string& message);
+	// The namespace should contains the following functions:
+	//		- bool is_endpoint_working(const std::string& message);
+	//		- void assert_endpoint_working(const std::string& message);
+
+	// The namespace should also contains the following variables:
+
 }
 
 //		!ASSERT_ENDPOINT_HPP

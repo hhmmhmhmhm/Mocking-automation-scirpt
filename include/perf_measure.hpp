@@ -33,7 +33,7 @@ struct wrapper_impl<R(*)(Args...), f> {
                                                                  * template <typename F, typename... Args>
                                                                  * decltype(auto) invoke(F&& f, Args&&... args) noexcept(
                                                                  *      noexcept(std::forward<F>(f)(std::forward<Args>(args)...))) {
-                                                                 *      return std::forward<F>(f)(std::forward<Args>(args)...);
+                                                                 *          return std::forward<F>(f)(std::forward<Args>(args)...);
                                                                  * }
                                                                  * For this example, this is the perfect usage because it's more generic for templates usage */
         auto end = std::chrono::high_resolution_clock::now();
